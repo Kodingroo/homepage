@@ -1,0 +1,256 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 ">
+      <div class="card-category left">
+        <div><span>Kodingroo</span></div>
+        <div id="sub-heading">Fun is Fundamental</div>
+      </div>
+
+      <div class="section-menu-container-container sticky">
+        <div class="static section-menu-container " style="visibility: visible;">
+          <div class="section-menu">
+            <a class="section-menu-link link-button section-border-right" href="https://docs.google.com/document/d/1ZXCt_mZAIgwIy_mQCEftTokzTjhw6sAY9_1nLm4914U/edit?usp=sharing" target="_blank">
+              <i class="fas fa-file"></i>&nbsp;Resume
+            </a>
+            <a class="section-menu-link link-button section-border-right" style="" href="https://discord.gg/khqKkRF" target="_blank">
+              <i class="fas fa-pen"></i>&nbsp;Discord
+            </a>
+            <a class="section-menu-link link-button" href="mailto:kodingroo@gmail.com">
+              <i class="fas fa-envelope"></i>&nbsp;email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="content">
+        <p><strong>Welcome to my portfolio!</strong></p>
+        
+        <p>An experienced and approchable Full Stack Software Engineer living in Tokyo, Japan.
+
+        <p>With a life-long commitment to gaming, I am fascinated by the impulses that motivate people to improve themselves. My constent ambition is to enhance experiences with game-like machinations to the benefit of both work efficiency and education.<br><br>
+
+          With that in mind, I have thrown myself into coding, approaching every problem with a critical, puzzle-solving eye. Always looking to optimal solutions in order to improve my own techniques, while always adherant to time constraints.<br><br>
+
+          With experience in Ruby, Docker, the Rails pipeline, JS front-end frameworks and game development in C# and Unity, I can't wait to find the next team that I will better, by improving myself along the way.<br><br>
+          <a href="mailto:kodingroo@gmail.com">
+            <i class="fas fa-envelope"></i> &nbsp;kodingroo@gmail.com
+          </a><br><br>
+        </p>
+      </div>
+      <a id="show-more">Know More</a>
+
+      <div class="border-solid">
+        <h1 class="portfolio-headings">Web Design Projects</h1>
+
+        <div class="card-product parent">
+          <%= link_to("https://boardgameapi.herokuapp.com/", target: "_blank") do  %>
+          <div class="hover-zoom child1">
+            <figure>
+              <img class="screenshot" src="<%= asset_path( 'BoardGameAPI_front.png' ) %>" />
+            </figure>
+          </div>
+          <% end %>
+          <div class="card-product-infos child2">
+            <h1><div> <%= link_to("BoardGameAPI", "https://boardgameapi.herokuapp.com/", target: "_blank") %> </div></h1>
+            <h2>
+              Building a usable API with dynamic searching.
+            </h2>
+            <p>
+              Vue.js is being used to dynamically fetch search results from the API built in Rails with PostgreSQL.
+              All CRUD functions are supported by the API, as well as security measures to ensure only admin users can do more than view the index data.
+              This project was designed to showcase my abilities with both Rails and Vue.
+            </p>
+            <p>
+              You may search the API by title, category or mechanic. Or click on the top-right die to load the full API in Json format.
+            </p>
+            <p>
+              This project was taken as an opportunity to expand my knowledge in Vue as well as learn the frameworks NUXT and Quasar. This project is also designed with intention to be used in part of a larger scale project now under development.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-product parent">
+          <%= link_to("https://github.com/jackwuersch/Sijibills", target: "_blank") do  %>
+          <div class="hover-zoom child1">
+            <figure>
+              <img class="screenshot" src="<%= asset_path( 'sijibills_front.png' ) %>" />
+            </figure>
+          </div>
+          <% end %>
+          <div class="card-product-infos child2">
+            <h1><div> <%= link_to("Sijibills", "https://github.com/jackwuersch/Sijibills", target: "_blank") %> </div></h1>
+            <p>
+              The result of 2 weeks of solid coding at Le Wagon, Tokyo.
+            </p>
+            <h2>Target:</h2>
+            <p>
+              Expats of Japan who have trouble understanding the bills that arrive in their mailbox.
+            </p>
+            <h2>Pain:</h2>
+            <p>
+              The difficulty of dealing with the Japanese City Hall and various companies when paying bills in both a foreign language and difficult to disypher kanji.
+            </p>
+            <h2>Solution:</h2>
+            <p>
+              A website that, while using the Google Vision API, is able to take photos of Japanese bills, health insurance, taxes and more; then identify, how much you have to pay, when and set email reminders.
+            </p>
+            <h2>Originality:</h2>
+            <p>
+              Current Google Translate is ineffective in quickly identifying the necessary values, and there is no good Japanese bill storing system for use at the City Hall to date.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-product parent">
+          <%= link_to("https://meepdom.herokuapp.com", target: "_blank") do  %>
+          <div class="hover-zoom child1">
+            <figure>
+              <img class="screenshot" src="<%= asset_path( 'Meepdom_front.png' ) %>" />
+            </figure>
+          </div>
+          <% end %>
+          <div class="card-product-infos child2">
+            <h1><div> <%= link_to("Meepdom", "https://meepdom.herokuapp.com", target: "_blank") %> </div></h1>
+            <p>
+              The result of 1 week of solid coding at Le Wagon, Tokyo.
+              Still under long-term development.
+            </p>
+            <h2>Target:</h2>
+            <p>
+              The globally-booming board game industry, and the individuals with too many games and too little shelf-space.
+            </p>
+            <h2>Pain:</h2>
+            <p>
+              Currently all secomnd-hand board games are auctioned through forums, carted to conventions and difficult to locate on ebay.
+            </p>
+            <h2>Solution:</h2>
+            <p>
+              Putting all board game sales and auctions in one location with ease of communication and browsing on a single users shopfront.
+            </p>
+            <h2>Originality:</h2>
+            <p>
+              There is nothing known specializing in this community's need currently.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-solid">
+        <h1 class="portfolio-headings">Game Design Projects</h1>
+
+        <div class="card-product parent">
+          <%= link_to("https://globalgamejam.org/2020/games/run-perfection-7", target: "_blank") do  %>
+          <div class="hover-zoom child1">
+            <figure>
+              <img class="screenshot" src="<%= asset_path( 'RunToPerfection_front.png' ) %>" />
+            </figure>
+          </div>
+          <% end %>
+          <div class="card-product-infos child2">
+            <h1><div> <%= link_to(" Global Game Jam", "https://globalgamejam.org/2020/games/run-perfection-7", target: "_blank") %> </div></h1>
+            <p>
+              27-31st January 2020 at BeXide Tachikawa Japan.<br><br>
+              Randomly assigned into a team of 5 other game development students from different fields, we worked together in full Japanese when developing this 4 player, controller based racer with impresive music over a 48 hour period.<br><br>
+              Very challenging from both a coding and language standpoint but thoroghly enjoyable, making life-long connections.
+            </p>
+          </div>
+        </div>
+<!--
+        <div class="card-product parent">
+          <%= link_to("https://www.sharemygame.com/share/10bb536a-a386-4686-be7d-fd4de738eaab", target: "_blank") do  %>
+          <div class="hover-zoom child1">
+            <figure>
+              <img class="screenshot" src="<%= asset_path( 'BallBreaker_front.png' ) %>" />
+            </figure>
+          </div>
+          <% end %>
+          <div class="card-product-infos child2">
+            <h1><div> <%= link_to("Ball Breaker", "https://www.sharemygame.com/share/10bb536a-a386-4686-be7d-fd4de738eaab", target: "_blank") %> </div></h1>
+            <p>
+              The first of several game projects started in 2018.<br><br>
+              Following instruction from online resource Udemy, I returned to a fundamental understanding of Unity and C# after several years away.<br><br>
+              With a number of personal twists and while always pushing the limits of my understanding, the following game projects are the result with more of the way, most definitely.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-product parent">
+          <%= link_to("http://gamedevjon.com/gamehost/games/Demo_WebGL-1535422618-1320821375/Demo_WebGL/", target: "_blank") do  %>
+          <div class="hover-zoom child1">
+            <figure>
+              <img class="screenshot" src="<%= asset_path( 'GalaxyShooter_front.png' ) %>" />
+            </figure>
+          </div>
+          <% end %>
+          <div class="card-product-infos child2">
+            <h1><div> <%= link_to("Galaxy Shooter", "http://gamedevjon.com/gamehost/games/Demo_WebGL-1535422618-1320821375/Demo_WebGL/", target: "_blank") %> </div></h1>
+            <p>
+              The Galaxy is almost the size of the game industry now-a-days. So I really enjoyed getting this classic scrolling-shooter racking up points, zipping lazer sounds and explading with a few extra special effects.
+            </p>
+            <h2>Please share your score with me if you give it a shot! (Pun intended)</h2>
+          </div>
+        </div>
+        -->
+      </div>
+
+      <div class="border-solid">
+        <h1 class="portfolio-headings">Crowd-funding Projects</h1>
+        <div class="card-product parent">
+          <%= link_to("https://www.kickstarter.com/projects/1759497187/the-lord-of-the-ice-garden-strategic-board-game?ref=discovery&term=lord%20of%20the%20ice%20garden", target: "_blank") do  %>
+          <div class="hover-zoom child1">
+            <figure>
+              <img class="screenshot" src="<%= asset_path( 'LordOfTheIceGarden_front.png' ) %>" />
+            </figure>
+          </div>
+          <% end %>
+          <div class="card-product-infos child2">
+            <h1><div> <%= link_to("Lord of the Ice Garden", "https://www.kickstarter.com/projects/1759497187/the-lord-of-the-ice-garden-strategic-board-game?ref=discovery&term=lord%20of%20the%20ice%20garden", target: "_blank") %> </div></h1>
+            <p>
+              A major undertaking. Working with Polish board game Publisher "Red Imp", I translated and designed the rulebook, built the Automa game system from scratch, organized the entire crowdfunding project and saw it successfully sell 541 copies. The game  is now world strategy rank 587. I did all of this while working full-time.<br><br>
+              I always enjoy rising to a challenge.
+            </p>
+            <h2>Please drop me a line if you've played and enjoyed the Automa system!</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-solid" style="margin-bottom: 60px;">
+        <h1 class="portfolio-headings">Web-content Projects</h1>
+        <div class="card-product parent">
+          <%= link_to("https://www.youtube.com/user/JadehopeVG", target: "_blank") do  %>
+          <div class="hover-zoom child1">
+            <figure>
+              <img class="screenshot" src="<%= asset_path( 'JadehopeVG_front.png' ) %>" />
+            </figure>
+          </div>
+          <% end %>
+          <div class="card-product-infos child2">
+            <h1><div> <%= link_to("JadehopeVG", "https://www.youtube.com/user/JadehopeVG", target: "_blank") %> </div></h1>
+            <p>
+              A continued hobby from the start of the Let's Play era, I play games, draw and code with interacting with viewers on Twitch and Youtube.<br><br>
+              Over the years, I have professionally edited both music and video, built a community over discord and enjoyed making my free time that little bit more constructuve. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var content = document.getElementById("content");
+  var button = document.getElementById("show-more");
+
+  button.onclick = function () {
+
+    if(content.className == "open"){
+      //shrink the box
+      content.className = "";
+      button.innerHTML = "Know More";
+    } else {
+      //expand the box
+      content.className = "open";
+      button.innerHTML = "Show Less";
+    }
+  };
+</script>

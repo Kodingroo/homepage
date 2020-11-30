@@ -1,0 +1,47 @@
+@import "base";
+
+div.section-menu {
+    background-color: #343740;
+    display: table-row;
+}
+
+div.section-menu-container {
+    background-color: rgba(237,237,237,.9);
+    display: table;
+    font-size: 14px;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+div.section-menu-container-container {
+    min-height: 30px;
+}
+
+div.section-menu>a:first-child {
+    border-left: none;
+}
+
+div.section-menu a {
+    color: $secondary;
+    display: table-cell;
+    padding: 5px;
+    // border-bottom: 1px solid;
+}
+
+.section-border-right {
+      border-right: 1px solid $secondary;
+}
+
+a.link-button {
+    display: inline-block;
+    padding: .5em;
+    &:hover{
+      background: $button;
+    }
+}
+a {
+    text-decoration: none;
+    color: #093156;
+}
+

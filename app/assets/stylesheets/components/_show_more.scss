@@ -1,0 +1,46 @@
+@import "base";
+
+body {
+  background: #eee;
+}
+
+#content {
+  width: 100%;
+  background: white;
+  border: 1px solid;
+  // padding: 20px;
+  font-family: Sans-Serif;
+  font-size: 18px;
+  color: $primary;
+  margin: 0 auto;
+
+  max-height: 160px;
+  overflow: hidden;
+
+  /* Set Transitions */
+  transition: max-height 0.7s;
+}
+
+#content.open {
+  max-height: 1000px;
+
+  /* Set transitions */
+  transition: max-height 0.7s;
+}
+
+#show-more {
+  padding: 5px;
+  width: 100%;
+  background: $primary;
+  color: $secondary;
+  opacity: 0.8;
+  font-family: $title-font;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  // padding: 5px;
+  // margin: 10px auto;
+      &:hover{
+      background: $button;
+    }
+}
